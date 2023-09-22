@@ -10,10 +10,9 @@ a simple project that generates a QR code image based on the text input by the u
 
 2. The `generateQR` function is defined. This function is called when you want to generate a QR code based on the text input by the user.
 
-3. Inside the `generateQR` function:
+3. Inside the ` generateQR ` function:
 
    - It checks if the length of the text entered in the `qrText` input field is greater than 0 (i.e., if there is some text entered by the user).
    - If there is text, it constructs a URL for generating a QR code using the "https://api.qrserver.com" API. It uses the `qrText.value` as the data for the QR code and sets the `src` attribute of the `qrImage` element to this URL.
    - It also adds the CSS class "show-img" to the `imgBox` element. This class is likely used to control the visibility or appearance of the QR code image.
    - If there is no text entered by the user, it adds the CSS class "error" to the `qrText` input field to indicate an error state, and then removes this class after a 1-second delay using `setTimeout`. This error handling is likely used to prompt the user to enter text before generating the QR code.
-
